@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 2,
+  "dockerfileLines": [
+    "FROM --platform=linux/arm64 node:18-alpine",
+    "WORKDIR /app",
+
+    "ENV PATH /app/node_modules/.bin:$PATH",
+
+    "COPY package.json .",
+    "COPY yarn.lock .",
+    
+    "RUN yarn install",
+    "RUN yarn build",
+    "CMD [\"yarn\", \"preview\"]"
+  ]
+}

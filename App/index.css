@@ -1,0 +1,36 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+#root {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#root div div {
+  width: 100vw !important;
+  height: 100vh !important;
+  margin: 0;
+  padding: 0;
+}
+
+#root div {
+  width: 100vw !important;
+  height: 100vh !important;
+  margin: 0;
+  padding: 0;
+}
+#info {
+	position: absolute;
+	top: 10px;
+	width: 100%;
+  color: white;
+  font-size: 60px;
+	text-align: center;
+	z-index: 100;
+	display:block;
+}
